@@ -9,4 +9,5 @@ import (
 func main() {
 	fmt.Println("Hola Mundo En Go")
 	variables.MuestroEnteros()
+	variables.RestoVariables()
 }
