@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/JuanRodriguez84/godesde0/ejercicios"
+	"github.com/JuanRodriguez84/godesde0/teclado"
 )
 
 func main() {
@@ -50,8 +50,10 @@ func main() {
 		fmt.Printf("%s \n", os3) // Printf permite formatear el texte de alguna manera. %s   significa que el argumento que le voy a pasar es un string
 	} */
 
-	numero, texto := ejercicios.ConversorNumerico("001")
-	fmt.Println("numero", numero)
-	fmt.Println("texto", texto)
+	/* 	numero, texto := ejercicios.ConversorNumerico("001")
+	   	fmt.Println("numero", numero)
+	   	fmt.Println("texto", texto) */
+
+	teclado.IngresoNumeros()
 
 }
