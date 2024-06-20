@@ -2,16 +2,15 @@ package main
 
 import (
 	"fmt"
-	"runtime"
 
-	"github.com/JuanRodriguez84/godesde0/variables"
+	"github.com/JuanRodriguez84/godesde0/ejercicios"
 )
 
 func main() {
 	fmt.Println("func main")
 	//variables.MuestroEnteros()
 	//variables.RestoVariables()
-	variables.ConviertoaTexto(1588)
+	/* variables.ConviertoaTexto(1588)
 	estado, texto := variables.ConviertoaTexto(1588)
 	fmt.Println("main - estado = ", estado)
 	fmt.Println("main - texto = ", texto)
@@ -49,6 +48,10 @@ func main() {
 		fmt.Println("Esto es darwin")
 	default:
 		fmt.Printf("%s \n", os3) // Printf permite formatear el texte de alguna manera. %s   significa que el argumento que le voy a pasar es un string
-	}
+	} */
+
+	numero, texto := ejercicios.ConversorNumerico("001")
+	fmt.Println("numero", numero)
+	fmt.Println("texto", texto)
 
 }
