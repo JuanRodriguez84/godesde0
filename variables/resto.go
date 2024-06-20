@@ -3,7 +3,8 @@ package variables
 import (
 	"fmt"
 
-	"time" // para trabajar con fechas y horas se utiliza este paquete, time  es un paquete que viene dentro de GO
+	"strconv" // viene en el statdard de GO no hay que importarlo
+	"time"    // para trabajar con fechas y horas se utiliza este paquete, time  es un paquete que viene dentro de GO
 )
 
 //var nombre string     // NO se ve la variable en todo el paquete por que comienza en mayuscula
@@ -26,4 +27,12 @@ func RestoVariables() {
 	fmt.Println("Sueldo = ", Sueldo)
 	fmt.Println("Fecha = ", Fecha)
 
+}
+
+func ConviertoaTexto(numero int) (bool, string) {
+	// var texto string               // se puede asignar directamente
+	// texto = string(numero)         // Imprime caracter extraño
+	texto := strconv.Itoa(numero) // funcion strconv.Itoa para Convertir de integer a alfanumerico
+	fmt.Println("ConviertoaTexto - texto = ", texto)
+	return true, texto
 }

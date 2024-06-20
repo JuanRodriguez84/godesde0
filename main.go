@@ -7,7 +7,11 @@ import (
 )
 
 func main() {
-	fmt.Println("Hola Mundo En Go")
-	variables.MuestroEnteros()
-	variables.RestoVariables()
+	fmt.Println("func main")
+	//variables.MuestroEnteros()
+	//variables.RestoVariables()
+	variables.ConviertoaTexto(1588)
+	estado, texto := variables.ConviertoaTexto(1588)
+	fmt.Println("main - estado = ", estado)
+	fmt.Println("main - texto = ", texto)
 }
