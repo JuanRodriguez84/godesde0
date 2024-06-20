@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/JuanRodriguez84/godesde0/teclado"
+	"github.com/JuanRodriguez84/godesde0/iteraciones"
 )
 
 func main() {
@@ -54,6 +54,10 @@ func main() {
 	   	fmt.Println("numero", numero)
 	   	fmt.Println("texto", texto) */
 
-	teclado.IngresoNumeros()
+	/* teclado.IngresoNumeros() */
+
+	// puede ir sin terminar nunca de esta manera:
+
+	iteraciones.IterarConContinue()
 
 }
