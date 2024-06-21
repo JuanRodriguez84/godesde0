@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/JuanRodriguez84/godesde0/iteraciones"
+	"github.com/JuanRodriguez84/godesde0/ejercicios"
 )
 
 func main() {
@@ -58,6 +58,6 @@ func main() {
 
 	// puede ir sin terminar nunca de esta manera:
 
-	iteraciones.IterarConContinue()
+	ejercicios.TablaDeMultiplicar()
 
 }
