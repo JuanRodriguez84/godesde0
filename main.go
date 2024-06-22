@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/JuanRodriguez84/godesde0/ejercicios"
+	"github.com/JuanRodriguez84/godesde0/files"
 )
 
 func main() {
@@ -58,6 +58,11 @@ func main() {
 
 	// puede ir sin terminar nunca de esta manera:
 
-	ejercicios.TablaDeMultiplicar()
+	//fmt.Println(tablaparamanejodearchivos.TablaDeMultiplicarConRetorno())
+
+	// files.GrabaTablaEnArchivo()
+
+	// files.SumaTablaEnArchivo()
+	files.LeoArchivo2daForma()
 
 }
