@@ -65,21 +65,25 @@ func main() {
 	// files.SumaTablaEnArchivo()
 	// files.LeoArchivo2daForma()
 
-	// funciones anonimas
+	/* 	// funciones anonimas
 
-	funciones.Calculos()
+	   	funciones.Calculos()
 
-	fn := funciones.Calculos3()
-	resultado := fn(5, 7)
-	fmt.Println("Resultado:", resultado)
+	   	fn := funciones.Calculos3()
+	   	resultado := fn(5, 7)
+	   	fmt.Println("Resultado:", resultado)
 
-	// se puede llamar directamente :
-	fmt.Println("****Directamente ****")
-	funciones.Calculos3()
+	   	// se puede llamar directamente :
+	   	fmt.Println("****Directamente ****")
+	   	funciones.Calculos3()
 
-	// Closures
+	   	// Closures
 
-	fmt.Println("****Closures ****")
-	funciones.LlamarClosure()
+	   	fmt.Println("****Closures ****")
+	   	funciones.LlamarClosure() */
+
+	// Recursion
+
+	funciones.Exponencia(2)
 
 }
