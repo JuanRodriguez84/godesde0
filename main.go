@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/JuanRodriguez84/godesde0/funciones"
+	"github.com/JuanRodriguez84/godesde0/arreglos_slices"
 )
 
 func main() {
@@ -82,8 +82,31 @@ func main() {
 	   	fmt.Println("****Closures ****")
 	   	funciones.LlamarClosure() */
 
-	// Recursion
+	/* 	// Recursion
 
-	funciones.Exponencia(2)
+	   	funciones.Exponencia(2) */
+
+	// Arreglos estáticos
+
+	fmt.Println("****Arreglos estaticos****")
+
+	arreglos_slices.MuestroArreglos()
+
+	arreglos_slices.MuestroArreglos2()
+
+	arreglos_slices.MuestroArreglosVariante()
+
+	arreglos_slices.RecorrerArreglos()
+
+	arreglos_slices.Matriz()
+
+	//Slices
+
+	fmt.Println("****Slices****")
+
+	arreglos_slices.MuestroSlice()
+	arreglos_slices.MuestroSlice2()
+	arreglos_slices.Capacidad()
+	arreglos_slices.Capacidad2()
 
 }
