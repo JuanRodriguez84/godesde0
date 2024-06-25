@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/JuanRodriguez84/godesde0/files"
+	"github.com/JuanRodriguez84/godesde0/funciones"
 )
 
 func main() {
@@ -63,6 +63,23 @@ func main() {
 	// files.GrabaTablaEnArchivo()
 
 	// files.SumaTablaEnArchivo()
-	files.LeoArchivo2daForma()
+	// files.LeoArchivo2daForma()
+
+	// funciones anonimas
+
+	funciones.Calculos()
+
+	fn := funciones.Calculos3()
+	resultado := fn(5, 7)
+	fmt.Println("Resultado:", resultado)
+
+	// se puede llamar directamente :
+	fmt.Println("****Directamente ****")
+	funciones.Calculos3()
+
+	// Closures
+
+	fmt.Println("****Closures ****")
+	funciones.LlamarClosure()
 
 }
