@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/JuanRodriguez84/godesde0/arreglos_slices"
+	"github.com/JuanRodriguez84/godesde0/mapas"
 )
 
 func main() {
@@ -86,7 +86,7 @@ func main() {
 
 	   	funciones.Exponencia(2) */
 
-	// Arreglos estáticos
+	/* // Arreglos estáticos
 
 	fmt.Println("****Arreglos estaticos****")
 
@@ -107,6 +107,8 @@ func main() {
 	arreglos_slices.MuestroSlice()
 	arreglos_slices.MuestroSlice2()
 	arreglos_slices.Capacidad()
-	arreglos_slices.Capacidad2()
+	arreglos_slices.Capacidad2() */
+
+	mapas.MostrarMapas()
 
 }
