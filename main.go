@@ -3,8 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/JuanRodriguez84/godesde0/ejercicio_interfaces"
-	"github.com/JuanRodriguez84/godesde0/modelos_estructuras"
+	"github.com/JuanRodriguez84/godesde0/defer_panic_recover"
 )
 
 func main() {
@@ -114,18 +113,22 @@ func main() {
 
 	mapas.MostrarMapas() */
 
-	fmt.Println("****Interfaces****")
+	/* 	fmt.Println("****Interfaces****")
 
-	Juan := new(modelos_estructuras.Hombre)
-	ejercicio_interfaces.HumanosRespirando(Juan)
-	// una interface puede heredar de otra interface.
-	ejercicio_interfaces.SerVivo(Juan)
+	   	Juan := new(modelos_estructuras.Hombre)
+	   	ejercicio_interfaces.HumanosRespirando(Juan)
+	   	// una interface puede heredar de otra interface.
+	   	ejercicio_interfaces.SerVivo(Juan)
 
-	Eva := new(modelos_estructuras.Mujer)
-	ejercicio_interfaces.HumanosRespirando(Eva)
-	// una interface puede heredar de otra interface.
-	ejercicio_interfaces.SerVivo(Eva)
+	   	Eva := new(modelos_estructuras.Mujer)
+	   	ejercicio_interfaces.HumanosRespirando(Eva)
+	   	// una interface puede heredar de otra interface.
+	   	ejercicio_interfaces.SerVivo(Eva) */
 
-	
+	fmt.Println("****DEFER - PANIC & RECOVER****")
+
+	defer_panic_recover.VemosDefer()
+	// defer_panic_recover.EjemploPanic() // se comentara para que funcione  EjemploRecover  ya que este metodo tambien tiene panic y no deja avanzar
+	defer_panic_recover.EjemploRecover()
 
 }
