@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/JuanRodriguez84/godesde0/mapas"
+	"github.com/JuanRodriguez84/godesde0/users"
 )
 
 func main() {
@@ -109,6 +109,10 @@ func main() {
 	arreglos_slices.Capacidad()
 	arreglos_slices.Capacidad2() */
 
-	mapas.MostrarMapas()
+	/* 	fmt.Println("****Mapas****")
+
+	   	mapas.MostrarMapas() */
+
+	users.AltaUsuario()
 
 }
