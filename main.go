@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/JuanRodriguez84/godesde0/users"
+	"github.com/JuanRodriguez84/godesde0/ejercicio_interfaces"
+	"github.com/JuanRodriguez84/godesde0/modelos_estructuras"
 )
 
 func main() {
@@ -111,8 +112,20 @@ func main() {
 
 	/* 	fmt.Println("****Mapas****")
 
-	   	mapas.MostrarMapas() */
+	mapas.MostrarMapas() */
 
-	users.AltaUsuario()
+	fmt.Println("****Interfaces****")
+
+	Juan := new(modelos_estructuras.Hombre)
+	ejercicio_interfaces.HumanosRespirando(Juan)
+	// una interface puede heredar de otra interface.
+	ejercicio_interfaces.SerVivo(Juan)
+
+	Eva := new(modelos_estructuras.Mujer)
+	ejercicio_interfaces.HumanosRespirando(Eva)
+	// una interface puede heredar de otra interface.
+	ejercicio_interfaces.SerVivo(Eva)
+
+	
 
 }
