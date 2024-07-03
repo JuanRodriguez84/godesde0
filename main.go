@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/JuanRodriguez84/godesde0/goroutines"
+	"github.com/JuanRodriguez84/godesde0/webserver"
 )
 
 func main() {
@@ -146,7 +146,7 @@ func main() {
 
 	// en channels es la forma en la que puedo interactuar entre las goroutines y el core principal de ejecución  */
 
-	fmt.Println("****Channels en GO (Diálogo entre GORoutines)****")
+	/* fmt.Println("****Channels en GO (Diálogo entre GORoutines)****")
 
 	canal1 := make(chan bool)
 	go goroutines.MiNombreLentoWithChannel("Juan Carlos", canal1)
@@ -160,8 +160,11 @@ func main() {
 	defer func()  {  
 		<-canal1  // con funcion anonima permite es que si se hace varias goroutines se pueden colocar todos los canales acá
 	}()      // con defer y la funcion anonima se logra que no termine la ejecución hasta que todos los canales no terminen su ejecución
-		     // las funciones anonimas terminan de esta manera ->    }()
+		     // las funciones anonimas terminan de esta manera ->    }() */
 
 
+	fmt.Println("****Servidor Web en GO****")
+
+	webserver.MiWebServer()
 
 }
