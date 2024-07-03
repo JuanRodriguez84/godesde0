@@ -131,9 +131,10 @@ func main() {
 	// defer_panic_recover.EjemploPanic() // se comentara para que funcione  EjemploRecover  ya que este metodo tambien tiene panic y no deja avanzar
 	defer_panic_recover.EjemploRecover() */
 
-	fmt.Println("****GORoutines (ejecución Asíncrona - Promesas en GO)****")
+	/* 	fmt.Println("****GORoutines (ejecución Asíncrona - Promesas en GO)****")
 
-	goroutines.MiNombreLento("Juan Carlos") // se debe tener cuidado con lo asincrono, en ocaiones creemos que por ser asincrono el runtime de GO va a esperar a que termine la ejecución para dar por finalizada la aplicación estamos equivocados, 
+	// ejecución Asíncrona  con la palabra reservada "go"
+	go goroutines.MiNombreLento("Juan Carlos") // se debe tener cuidado con lo asincrono, en ocaciones creemos que por ser asincrono el runtime de GO va a esperar a que termine la ejecución para dar por finalizada la aplicación estamos equivocados,
 	// por ese si queremos ver concurrentemente como se ejecuta es hacer algo como esto :
 
 	fmt.Println("Estoy aqui")
@@ -143,7 +144,24 @@ func main() {
 
 	// hay que tener mucho cuidado con el manejo de rutinas asincronas
 
-	// en channels es la forma en la que puedo interactuar entre las goroutines y el core principal de ejecución 
+	// en channels es la forma en la que puedo interactuar entre las goroutines y el core principal de ejecución  */
+
+	fmt.Println("****Channels en GO (Diálogo entre GORoutines)****")
+
+	canal1 := make(chan bool)
+	go goroutines.MiNombreLentoWithChannel("Juan Carlos", canal1)
+	fmt.Println("Estoy aqui")
+
+	// Como emular el await de nodejs? es asi:
+	//	<-canal1 // esto es un await, espera a que el canal1 termine la ejecución
+
+	// otra manera de hacerlo es con el defer, asi:
+
+	defer func()  {  
+		<-canal1  // con funcion anonima permite es que si se hace varias goroutines se pueden colocar todos los canales acá
+	}()      // con defer y la funcion anonima se logra que no termine la ejecución hasta que todos los canales no terminen su ejecución
+		     // las funciones anonimas terminan de esta manera ->    }()
+
 
 
 }
