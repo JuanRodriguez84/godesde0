@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/JuanRodriguez84/godesde0/defer_panic_recover"
+	"github.com/JuanRodriguez84/godesde0/goroutines"
 )
 
 func main() {
@@ -100,7 +100,7 @@ func main() {
 
 	arreglos_slices.Matriz()
 
-	//Slices
+	// Slices
 
 	fmt.Println("****Slices****")
 
@@ -125,10 +125,25 @@ func main() {
 	   	// una interface puede heredar de otra interface.
 	   	ejercicio_interfaces.SerVivo(Eva) */
 
-	fmt.Println("****DEFER - PANIC & RECOVER****")
+	/* 	fmt.Println("****DEFER - PANIC & RECOVER****")
 
 	defer_panic_recover.VemosDefer()
 	// defer_panic_recover.EjemploPanic() // se comentara para que funcione  EjemploRecover  ya que este metodo tambien tiene panic y no deja avanzar
-	defer_panic_recover.EjemploRecover()
+	defer_panic_recover.EjemploRecover() */
+
+	fmt.Println("****GORoutines (ejecución Asíncrona - Promesas en GO)****")
+
+	goroutines.MiNombreLento("Juan Carlos") // se debe tener cuidado con lo asincrono, en ocaiones creemos que por ser asincrono el runtime de GO va a esperar a que termine la ejecución para dar por finalizada la aplicación estamos equivocados, 
+	// por ese si queremos ver concurrentemente como se ejecuta es hacer algo como esto :
+
+	fmt.Println("Estoy aqui")
+
+	var x string
+	fmt.Scanln(&x)  //   con & se pasa el puntero de la variable, en este caso x, con esto espera a que se ingrese un valor por teclado (Scanln)
+
+	// hay que tener mucho cuidado con el manejo de rutinas asincronas
+
+	// en channels es la forma en la que puedo interactuar entre las goroutines y el core principal de ejecución 
+
 
 }
