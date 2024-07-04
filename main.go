@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/JuanRodriguez84/godesde0/webserver"
+	"github.com/JuanRodriguez84/godesde0/middleware"
 )
 
 func main() {
@@ -163,8 +163,12 @@ func main() {
 		     // las funciones anonimas terminan de esta manera ->    }() */
 
 
-	fmt.Println("****Servidor Web en GO****")
+	/* fmt.Println("****Servidor Web en GO****")
 
-	webserver.MiWebServer()
+	webserver.MiWebServer() */
+
+	fmt.Println("****Middlewares en GO****")
+
+	middleware.MiMiddleware()
 
 }
